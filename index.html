@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/styles.css" />
+
+    <title>Buscador de canciones</title>
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="./images/wave.svg" />
+      <h1>Letra de canciones</h1>
+    </header>
+
+    <main>
+      <div>
+        <h2>Busqueda</h2>
+        <p>Busca por artista y nombre de la canción:</p>
+        <p><span>*</span>Campos obligatorios</p>
+      </div>
+      <div>
+        <form action="" id="formulario-buscar">
+          <div class="form-group">
+            <label for="exampleInputName"
+              ><span>*</span>Nombre del Artista
+            </label>
+            <input
+              type="text"
+              class="form-control"
+              id="artista"
+              aria-describedby="namelHelp"
+            />
+          </div>
+          <div class="form-group">
+            <label for="exampleInputSong"
+              ><span>*</span>Nombre de la Canción</label
+            >
+            <input type="text" class="form-control" id="cancion" />
+          </div>
+
+          <button id="buscar" type="submit" class="btn btn-primary">
+            Buscar
+          </button>
+        </form>
+      </div>
+    </main>
+    <div id="error" role="alert"></div>
+    <div id="heading-resultado" class="heading-titulo"></div>
+    <div id="letra-resultados" class="result"></div>
+    <div>
+      Icons made by
+      <a
+        href="https://www.flaticon.com/free-icon/wave_758884"
+        title="Kiranshastry"
+        >Kiranshastry</a
+      >
+      from
+      <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+    </div>
+    <script src="/js/app.js" type="module"></script>
+  </body>
+</html>
